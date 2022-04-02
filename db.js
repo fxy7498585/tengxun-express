@@ -1,3 +1,12 @@
+/*
+ * Copyright (c) HowBuy, All rights reserved.
+ * @Description:  long description for the file
+ * @summary: 
+ * @Author: xingyue.fu
+ * @Date: 2022-04-01 17:36:43
+ * @LastEditors: xingyue.fu
+ * @LastEditTime: 2022-04-02 14:38:40
+ */
 const { Sequelize, DataTypes } = require("sequelize");
 
 // 从环境变量中读取数据库配置
