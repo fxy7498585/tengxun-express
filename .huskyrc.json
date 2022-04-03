@@ -1,5 +1,0 @@
-{
-  "hooks": {
-    "pre-push": "cd ./vue && yarn install && yarn build && node ../copyFile.js"
-  }
-}
