@@ -6,7 +6,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <div>
-      <router-link to="/">Go to Home</router-link>
+      <router-link to="/">Go to Home11</router-link>
       <router-link to="/about">Go to About</router-link>
       <div>
         1111
