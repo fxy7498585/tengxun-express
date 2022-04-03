@@ -1,0 +1,29 @@
+<!--
+ * Copyright (c) HowBuy, All rights reserved.
+ * @Description:  long description for the file
+ * @summary: 
+ * @Author: xingyue.fu
+ * @Date: 2022-04-03 18:19:23
+ * @LastEditors: xingyue.fu
+ * @LastEditTime: 2022-04-03 18:51:02
+-->
+<script setup>
+// This starter template is using Vue 3 <script setup> SFCs
+// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
+import HelloWorld from './components/HelloWorld.vue'
+</script>
+
+<template>
+  <img alt="Vue logo" src="./assets/logo.png" />
+</template>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>

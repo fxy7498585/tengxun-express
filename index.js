@@ -5,13 +5,15 @@
  * @Author: xingyue.fu
  * @Date: 2022-04-01 17:36:43
  * @LastEditors: xingyue.fu
- * @LastEditTime: 2022-04-03 18:08:37
+ * @LastEditTime: 2022-04-03 18:48:10
  */
-const indexRouter = require('./routers/index')
+
+const path = require('path');
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
 const { init: initDB, Counter } = require("./db");
+const indexRouter = require('./routers/index')
 
 const logger = morgan("tiny");
 
@@ -20,6 +22,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cors());
 app.use(logger);
+app.use(express.static(path.join(__dirname, 'views')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // 注册路由
 app.use('/index', indexRouter)
