@@ -1,12 +1,3 @@
-<!--
- * Copyright (c) HowBuy, All rights reserved.
- * @Description:  long description for the file
- * @summary: 
- * @Author: xingyue.fu
- * @Date: 2022-04-03 18:19:23
- * @LastEditors: xingyue.fu
- * @LastEditTime: 2022-04-03 18:51:02
--->
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
@@ -14,7 +5,15 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <div>
+      <router-link to="/">Go to Home</router-link>
+      <router-link to="/about">Go to About</router-link>
+      <div>
+        1111
+      </div>
+      <router-view></router-view>
+  </div>
+
 </template>
 
 <style>
