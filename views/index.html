@@ -71,7 +71,7 @@
         <h1 style="display: inline; margin-bottom: 48px">欢迎使用微信云托管</h1>
       </div>
       <div style="text-align: center">
-        <p class="count-text">当前计数111：<span class="count-number"></span></p>
+        <p class="count-text">当前计数：<span class="count-number"></span></p>
         <div
           style="display: flex; justify-content: center; margin-bottom: 80px"
         >
@@ -85,7 +85,7 @@
             class="btn btn-outline-success btn-lg count-button"
             style="background: rgba(0, 0, 0, 0.03); color: #07c160; border: 0"
             onclick="set('clear')"
-            >清零111</a
+            >清零</a
           >
         </div>
         <small
@@ -113,6 +113,7 @@
         method: "get",
       }).done(function (res) {
         if (res && res.data !== undefined) {
+          console.log('res', res)
           $(".count-number").html(res.data);
         }
       });
