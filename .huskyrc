@@ -1,5 +1,5 @@
 {
   "hooks": {
-    "pre-commit": "cd ./vue && yarn install && yarn build && node ../copyFile.js"
+    "pre-commit": "node ../copyFile.js"
   }
 }
