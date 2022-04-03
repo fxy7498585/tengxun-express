@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "cd ./vue && yarn install && yarn build && node ../copyFile.js"
+    "build": "cd ./vue && yarn install && yarn build && node ../copyFile.js",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "Apache-2.0",
@@ -17,6 +18,9 @@
     "morgan": "^1.10.0",
     "mysql2": "^2.3.2",
     "sequelize": "^6.8.0"
+  },
+  "gitHooks": {
+    "pre-commit": "node copyFile.js"
   },
   "engines": {
     "node": ">=12.0.0"
